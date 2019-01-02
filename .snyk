@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - nodemailer-mailgun-transport > mailgun-js > proxy-agent > http-proxy-agent > extend:
+        patched: '2019-01-02T22:11:47.941Z'
+    - nodemailer-mailgun-transport > mailgun-js > proxy-agent > https-proxy-agent > extend:
+        patched: '2019-01-02T22:11:47.941Z'
+    - nodemailer-mailgun-transport > mailgun-js > proxy-agent > pac-proxy-agent > http-proxy-agent > extend:
+        patched: '2019-01-02T22:11:47.941Z'
+    - nodemailer-mailgun-transport > mailgun-js > proxy-agent > pac-proxy-agent > https-proxy-agent > extend:
+        patched: '2019-01-02T22:11:47.941Z'
