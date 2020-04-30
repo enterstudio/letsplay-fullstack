@@ -15,7 +15,9 @@
     "start": "npm run server",
     "start:dev": "npm run server:dev",
     "test": "mocha",
-    "begin": "nodemon lib/server/index.js"
+    "begin": "nodemon lib/server/index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "betterScripts": {
     "server": {
@@ -78,7 +80,8 @@
     "react-transition-group": "1.x",
     "redux": "3.7.1",
     "redux-thunk": "2.2.0",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
@@ -118,5 +121,6 @@
     "plugins": [
       "transform-object-rest-spread"
     ]
-  }
+  },
+  "snyk": true
 }
